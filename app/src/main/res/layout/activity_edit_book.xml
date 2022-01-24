@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".AddBookActivity">
+
+    <TextView
+        android:id="@+id/topMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit the book data. Press update button to save changes"
+        android:layout_gravity="center"/>
+
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtUpdateBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <!--edit text to enter course duration-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="Edit Genre: "
+            android:layout_weight="1"/>
+        <Spinner
+            android:id="@+id/SpnUpdateGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_weight="2"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <!--edit text to display course tracks-->
+    <EditText
+        android:id="@+id/idEdtUpdateAuthorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <!--edit text for course description-->
+    <EditText
+        android:id="@+id/idEdtUpdateLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <!--button for adding new course-->
+    <Button
+        android:id="@+id/idBtnUpdateBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Update book"
+        android:textAllCaps="false" />
+
+    <!--button for adding new course-->
+    <Button
+        android:id="@+id/idBtnDeleteBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Delete book"
+        android:textAllCaps="false" />
+
+</LinearLayout>

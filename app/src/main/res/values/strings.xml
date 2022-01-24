@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Librarium</string>
+    <string-array name="genres">
+        <item>History</item>
+        <item>Thriller</item>
+        <item>Poetry</item>
+        <item>Essay</item>
+        <item>Comic/Manga</item>
+        <item>Other</item>
+    </string-array>
+</resources>
